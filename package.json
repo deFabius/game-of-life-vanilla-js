@@ -1,0 +1,24 @@
+{
+  "name": "gameoflifevanilla",
+  "version": "1.0.0",
+  "description": "An implementation of Conway's Game of Life using vanilla javascript",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/gulp",
+    "watch": "./node_modules/.bin/gulp sass:watch",
+    "dev": "./node_modules/.bin/gulp dev"
+  },
+  "keywords": [
+    "Game of Life",
+    "javascript"
+  ],
+  "author": "Fabio Valle",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.0.0",
+    "gulp-open": "^2.0.0",
+    "gulp-sass": "^2.3.1"
+  }
+}

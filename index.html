@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game of life</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="interface-container">
+			<div id="console"><h3>Welcome to the Game of Life</h3></div>
+			<form>
+				<div class="input-group">
+					<label for="board-size">Board Size</label>
+					<input class="input" name="boardSize" id="board-size" type="text" size="3" value="20" />
+				</div>
+				<div class="input-group">
+					<label for="is-random">Random initialisation</label>
+					<span class="checkbox" id="is-random">
+						<input class="input" name="isRandom" id="chb-1" type="checkbox" />
+						<label for="chb-1"><span><span>on</span><span></span><span>off</span></span></label>
+					</span>
+				</div>
+				<div class="input-group">
+					<input type="submit" value="Create Board" class="input" />
+				</div>
+			</form>
+		</div>
+		<div id="board"></div>
+		<div id="board-controls">
+			<input type="button" class="input" id="play-stop" value="start" />
+			<span>
+				<label for="speed">Next frame delay (<span id="speed-label"></span>ms)</label>
+				<input id="speed" type ="range" min ="-1000" max="-50" step ="50" value ="-200"/>
+			</span>
+			<input type="button" class="input" id="step" value="step" />
+			<span>
+				<label for="generation-counter">Generation</label>
+				<input id="generation-counter" type="text" readonly="true" size="4" class="input" value="0" />
+			</span>
+			<input type="button" class="input" id="back" value="back" />
+		</div>
+		<script type="text/javascript" src="script/component/Cell.js"></script>
+		<script type="text/javascript" src="script/component/Row.js"></script>
+		<script type="text/javascript" src="script/component/Board.js"></script>
+		<script type="text/javascript" src="script/app.js"></script>
+	</body>
+</html>

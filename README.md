@@ -10,4 +10,7 @@ This task also starts a number of watchers:
 npm run dev
 ```
 
+Test it live here:
+
+<https://defabius.github.io/game-of-life-vanilla-js/>
 TBC
